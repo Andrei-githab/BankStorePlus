@@ -1,0 +1,25 @@
+﻿<Window x:Class="BankStorePlus.AdminPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BankStorePlus"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Кабинет администратора" Height="600" Width="600" Icon="resources/Lightning.ico">
+    <Grid>
+        <Border MinWidth="450" MinHeight="550" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="650" CornerRadius="20" MaxHeight="560">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Личный кабинет администратора" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
+                <TextBlock x:Name="NameAdmin" Text="Здравствуйте!" FontSize="25" FontWeight="Medium" />
+                <Button Margin="0 25 0 0" FontSize="18" HorizontalAlignment="Center" Content="Посмотреть детекторы валют" HorizontalContentAlignment="Center" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="Currency_Detectors_Click"/>
+                <Button Margin="72,25,72,0" FontSize="18" HorizontalAlignment="Center" Content="Посмотреть счетчики купюр" HorizontalContentAlignment="Center" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="Bill_Counters_Click" Width="286"/>
+                <Button Margin="72,25,72,0" FontSize="18" HorizontalAlignment="Center" Content="Посмотреть счетчики монет" HorizontalContentAlignment="Center" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="Сoin_counters_Click" Width="286"/>
+                <Button Margin="0 50 0 0" FontSize="18" HorizontalAlignment="Left" Content="Выход" Style="{StaticResource MaterialDesignRaisedLightButton}" Click="Button_Vehod_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
